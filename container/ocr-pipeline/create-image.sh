@@ -24,7 +24,7 @@ IMAGE_TAG=${2/*:/}
 docker image rm --force "${IMAGE}:${IMAGE_TAG}" || echo "[WARN] no image ${IMAGE}:${IMAGE_TAG} existing ... "
 
 # go to project root dir for full build context
-cd ../..
+#cd ../..
 
 # re-build container from scratch (no caches)
 docker build --no-cache \

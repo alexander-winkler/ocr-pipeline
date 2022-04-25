@@ -12,7 +12,7 @@ ENV OCR_ROOT /opt/ocr-pipeline
 # update software repositories
 RUN ["apt-get", "update"]
 RUN apt-get update && apt-get install -y \
-    python3-pip 
+    python3-pip
 
 # create OCR_ROOT dir inside container ...
 RUN ["mkdir", "-p", "${OCR_ROOT}"]
